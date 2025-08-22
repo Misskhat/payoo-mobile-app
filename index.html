@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>Payoo Mobile App</title>
+</head>
+<body class="bg-[#F4F5F7] flex flex-col items-center justify-center h-[100vh]">
+    <div class="flex items-center justify-center w-[316px] h-[165px] bg-[url(./assets/bg.png)] bg-no-repeat bg-cover">
+        <img src="./assets/Group.png" alt="">
+    </div>
+    <form class="w-[338px] p-8">
+        <div>
+            <label for="mobile-number" class="font-semibold">Mobile Number</label>
+            <br>
+            <input type="number" name="" id="mobile-number" class="input rounded-xl mt-3 mb-4" placeholder="Enter your number">
+        </div>
+        <div>
+            <label for="mobile-number" class="font-semibold">4 Digit Pin</label>
+            <br>
+            <input type="number" name="" id="mobile-number" class="input rounded-xl mt-3" placeholder="Enter 4 Digit Pin">
+        </div>
+        <button id="loginBtn" class="btn btn-primary w-full rounded-[32px] mt-4">Login</button>
+    </form>
+    <script src="./index.js"></script>
+</body>
+</html>
