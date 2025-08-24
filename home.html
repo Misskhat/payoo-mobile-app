@@ -1,19 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Payoo Home Page</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+        integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
-<body class="max-w-sm mx-auto border-2 border-blue-500">
-    <nav class="flex items-center justify-between">
+
+<body class="max-w-sm mx-auto bg-[#F4F5F7]">
+    <nav class="flex items-center justify-between bg-white">
         <div class="flex items-center">
             <img class="w-[30%]" src="./assets/Group.png" alt="logo">
             <div id="balance-secion">
-                <h3>$<span>45000</span></h3>
+                <h3 class="font-extrabold">$<span>45000</span></h3>
                 <p class="text-[#08080880]">Available Balance</p>
             </div>
         </div>
@@ -21,38 +25,65 @@
             <button class="btn"><i class="fa-solid fa-arrow-right-from-bracket rotate-180"></i>Log Out</button>
         </div>
     </nav>
-    <div class="border-b-2 border-[#08080880] mt-3 mb-8 w-full"></div>
-    <section id="welcome-section">
+    <div class="border-b-2 border-[#08080880] pt-3 w-full bg-white"></div>
+    <section id="welcome-section" class="bg-white pt-5 px-2">
         <h1 class="text-2xl font-bold">🔥 Welcome to Payooo!</h1>
-        <p class="text-[#08080880] mt-3">Enjoy easy and convenient financial services with us. Cashout charge is low and </p>
+        <p class="text-[#08080880] mt-3">Enjoy easy and convenient financial services with us. Cashout charge is low and
+        </p>
     </section>
-    <section id="options" class="mt-6">
+    <!-- option section (add money, cash out, transfer, get bonus, pay bills & transition) -->
+    <section id="options" class="pt-6 bg-white rounded-b-xl px-2 pb-6">
         <div class="options-container grid grid-cols-3 grid-rows-2 justify-between items-center gap-4">
-            <div class="option flex flex-col justify-center items-center p-3">
+            <div class="option flex flex-col justify-center items-center p-3 rounded-lg border border-[#08080880]">
                 <img src="./assets/wallet1.png" alt="wallet">
                 <h6 class="font-semibold text-[#08080880]">Add Money</h6>
             </div>
-            <div class="option flex flex-col justify-center items-center p-3">
+            <div class="option flex flex-col justify-center items-center p-3 rounded-lg border border-[#08080880]">
                 <div><img src="./assets/send1.png" alt="send icon"></div>
                 <h6 class="font-semibold text-[#08080880]">Cash Out</h6>
             </div>
-            <div class="option flex flex-col justify-center items-center p-3">
+            <div class="option flex flex-col justify-center items-center p-3 rounded-lg border border-[#08080880]">
                 <img src="./assets/money1.png" alt="money icon">
                 <h6 class="font-semibold text-[#08080880]">Add Money</h6>
             </div>
-            <div class="option flex flex-col justify-center items-center p-3">
+            <div class="option flex flex-col justify-center items-center p-3 rounded-lg border border-[#08080880]">
                 <img src="./assets/bonus1.png" alt="bonus icon">
                 <h6 class="font-semibold text-[#08080880]">Add Money</h6>
             </div>
-            <div class="option flex flex-col justify-center items-center p-3">
+            <div class="option flex flex-col justify-center items-center p-3 rounded-lg border border-[#08080880]">
                 <img src="./assets/purse1.png" alt="payout icon">
                 <h6 class="font-semibold text-[#08080880]">Add Money</h6>
             </div>
-            <div class="option flex flex-col justify-center items-center p-3">
+            <div class="option flex flex-col justify-center items-center p-3 rounded-lg border border-[#08080880]">
                 <img src="./assets/transaction1.png" alt="transaction icon">
                 <h6 class="font-semibold text-[#08080880]">Add Money</h6>
             </div>
         </div>
     </section>
+    <!-- All form section -->
+    <section id="all-section-form" class="mt-8 px-2">
+        <h3 class="font-bold">Add Money</h3>
+        <form class="p-6 bg-white rounded-xl mt-4">
+            <label for="bank-account" class="mb-3 block font-semibold">Select A Bank</label>
+            <select id="bank-account" class="select bg-[#F4F5F7] rounded-2xl">
+                <option disabled selected>Select Bank</option>
+                <option>IBBL</option>
+                <option>SCBL</option>
+                <option>UCBL</option>
+            </select>
+            
+            <label for="account-number" class="block mt-4 mb-3 font-semibold">Bank Account Number</label>
+            <input id="account-number" type="text" placeholder="Enter 11 digit account number" class="input bg-[#F4F5F7] rounded-2xl" />
+
+            <label for="amount-add" class="block mt-4 mb-3 font-semibold">Amount to Add</label>
+            <input id="amount-add" type="text" placeholder="Add Amount to Available Balance" class="input bg-[#F4F5F7] rounded-2xl" />
+
+            <label for="pin" class="block mt-4 mb-3 font-semibold">Pin Number</label>
+            <input id="pin" type="text" placeholder="Enter 4 digit pin number" class="input bg-[#F4F5F7] rounded-2xl" />
+
+            <button class="btn btn-primary w-full mt-4 rounded-2xl">Primary</button>
+        </form>
+    </section>
 </body>
+
 </html>
