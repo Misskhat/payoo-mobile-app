@@ -17,7 +17,7 @@
         <div class="flex items-center">
             <img class="w-[30%]" src="./assets/Group.png" alt="logo">
             <div id="balance-secion">
-                <h3 class="font-extrabold">$<span>45000</span></h3>
+                <h3 class="font-extrabold">$<span id="available-balance">45000</span></h3>
                 <p class="text-[#08080880]">Available Balance</p>
             </div>
         </div>
@@ -89,7 +89,7 @@
 
                     <button class="btn btn-primary w-full mt-4 rounded-2xl">Add Money</button>
                 </form>
-            </div>
+            </div>, 
         </div>
 
         <!-- Cash Out form -->
@@ -110,7 +110,7 @@
                     <input id="pin" type="text" placeholder="Enter 4 digit pin number"
                         class="input bg-[#F4F5F7] rounded-2xl" />
 
-                    <button class="btn btn-primary w-full mt-4 rounded-2xl">Withdraw Money</button>
+                    <button id="add-money" class="btn btn-primary w-full mt-4 rounded-2xl">Withdraw Money</button>
                 </form>
             </div>
         </div>
@@ -153,6 +153,7 @@
             </div>
         </div>
     </section>
+    <script src="./home.js"></script>
 </body>
 
 </html>
