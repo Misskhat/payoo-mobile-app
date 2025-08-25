@@ -62,27 +62,96 @@
     </section>
     <!-- All form section -->
     <section id="all-section-form" class="mt-8 px-2">
-        <h3 class="font-bold">Add Money</h3>
-        <form class="p-6 bg-white rounded-xl mt-4">
-            <label for="bank-account" class="mb-3 block font-semibold">Select A Bank</label>
-            <select id="bank-account" class="select bg-[#F4F5F7] rounded-2xl">
-                <option disabled selected>Select Bank</option>
-                <option>IBBL</option>
-                <option>SCBL</option>
-                <option>UCBL</option>
-            </select>
-            
-            <label for="account-number" class="block mt-4 mb-3 font-semibold">Bank Account Number</label>
-            <input id="account-number" type="text" placeholder="Enter 11 digit account number" class="input bg-[#F4F5F7] rounded-2xl" />
+        <!-- Add Money form -->
+        <div id="add-money" class="block">
+            <h3 class="font-bold">Add Money</h3>
+            <div class="bg-white rounded-lg mb-8 mt-4">
+                <form class="p-6 bg-white rounded-3xl my-4">
+                    <label for="bank-account" class="mb-3 block font-semibold">Select A Bank</label>
+                    <select id="bank-account" class="select bg-[#F4F5F7] rounded-2xl">
+                        <option disabled selected>Select Bank</option>
+                        <option>IBBL</option>
+                        <option>SCBL</option>
+                        <option>UCBL</option>
+                    </select>
 
-            <label for="amount-add" class="block mt-4 mb-3 font-semibold">Amount to Add</label>
-            <input id="amount-add" type="text" placeholder="Add Amount to Available Balance" class="input bg-[#F4F5F7] rounded-2xl" />
+                    <label for="account-number" class="block mt-4 mb-3 font-semibold">Bank Account Number</label>
+                    <input id="account-number" type="text" placeholder="Enter 11 digit account number"
+                        class="input bg-[#F4F5F7] rounded-2xl" />
 
-            <label for="pin" class="block mt-4 mb-3 font-semibold">Pin Number</label>
-            <input id="pin" type="text" placeholder="Enter 4 digit pin number" class="input bg-[#F4F5F7] rounded-2xl" />
+                    <label for="amount-add" class="block mt-4 mb-3 font-semibold">Amount to Add</label>
+                    <input id="amount-add" type="text" placeholder="Add Amount to Available Balance"
+                        class="input bg-[#F4F5F7] rounded-2xl" />
 
-            <button class="btn btn-primary w-full mt-4 rounded-2xl">Primary</button>
-        </form>
+                    <label for="pin" class="block mt-4 mb-3 font-semibold">Pin Number</label>
+                    <input id="pin" type="text" placeholder="Enter 4 digit pin number"
+                        class="input bg-[#F4F5F7] rounded-2xl" />
+
+                    <button class="btn btn-primary w-full mt-4 rounded-2xl">Add Money</button>
+                </form>
+            </div>
+        </div>
+
+        <!-- Cash Out form -->
+        <div id="cash-out-money" class="hidden">
+            <h3 class="font-bold">Cash Out</h3>
+            <div class="bg-white rounded-lg mb-8 mt-4">
+                <form class="p-6 bg-white rounded-3xl my-4">
+
+                    <label for="agent-number" class="block mt-4 mb-3 font-semibold">Agent Number</label>
+                    <input id="agent-number" type="text" placeholder="Enter 11 digit account number"
+                        class="input bg-[#F4F5F7] rounded-2xl" />
+
+                    <label for="amount-add" class="block mt-4 mb-3 font-semibold">Amount</label>
+                    <input id="amount-add" type="text" placeholder="Enter amount to withdraw"
+                        class="input bg-[#F4F5F7] rounded-2xl" />
+
+                    <label for="pin" class="block mt-4 mb-3 font-semibold">Pin Number</label>
+                    <input id="pin" type="text" placeholder="Enter 4 digit pin number"
+                        class="input bg-[#F4F5F7] rounded-2xl" />
+
+                    <button class="btn btn-primary w-full mt-4 rounded-2xl">Withdraw Money</button>
+                </form>
+            </div>
+        </div>
+
+        <!-- Transfer Money -->
+        <div id="transfer-money" class="hidden">
+            <h3 class="font-bold">Transfer Money</h3>
+            <div class="bg-white rounded-lg mb-8 mt-4">
+                <form class="p-6 bg-white rounded-3xl my-4">
+
+                    <label for="user-number" class="block mt-4 mb-3 font-semibold">User Account Number</label>
+                    <input id="user-number" type="text" placeholder="Enter 11 digit account number"
+                        class="input bg-[#F4F5F7] rounded-2xl" />
+
+                    <label for="amount-add" class="block mt-4 mb-3 font-semibold">Amount</label>
+                    <input id="amount-add" type="text" placeholder="Enter amount to withdraw"
+                        class="input bg-[#F4F5F7] rounded-2xl" />
+
+                    <label for="pin" class="block mt-4 mb-3 font-semibold">Pin Number</label>
+                    <input id="pin" type="text" placeholder="Enter 4 digit pin number"
+                        class="input bg-[#F4F5F7] rounded-2xl" />
+
+                    <button class="btn btn-primary w-full mt-4 rounded-2xl">Send Now</button>
+                </form>
+            </div>
+        </div>
+
+        <!-- Get Bonus -->
+        <div id="get-bonus" class="hidden">
+            <h3 class="font-bold">Get Bonus</h3>
+            <div class="bg-white rounded-lg mb-8 mt-4">
+                <form class="p-6 bg-white rounded-3xl mt-4">
+
+                    <label for="bonus" class="block mt-2 mb-3 font-semibold">Enter Bonus Coupon</label>
+                    <input id="bonus" type="text" placeholder="Enter your coupon`"
+                        class="input bg-[#F4F5F7] rounded-2xl" />
+
+                    <button class="btn btn-primary w-full mt-4 rounded-2xl">Get Bonus</button>
+                </form>
+            </div>
+        </div>
     </section>
 </body>
 
